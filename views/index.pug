@@ -1,0 +1,24 @@
+html
+    head
+    body
+        div
+            h1 Add a New User
+        form(id="myForm", method='POST', action='/createNewUser')
+            div
+                label(for='first_name') first Name
+                input(id='first_name', name='first_name')
+            div
+                label(for='last_name') last Name
+                input(id='last_name', name='last_name')
+            div
+                label(for='email') Email
+                input(id='email', name='email')
+            div
+                label(for='age') Age
+                input(id='age', name='age', type='number')
+            div
+                input(type='submit', value='Add User')
+            div
+                a(href="/user") See all the Users
+            div
+                a(href="/search") Search for a user

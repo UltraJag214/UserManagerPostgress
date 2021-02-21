@@ -1,0 +1,14 @@
+html
+    head
+    body
+        div
+            h1 Search for a User
+        form(id="searchForm", method='POST', action='/searchPage')
+            div
+                label(for='first_name') first name
+                input(id='first_name', name='first_name')
+            div
+                label(for='last_name') last name
+                input(id='last_name', name='last_name')
+            div
+                input(type='submit', value='Search User')
